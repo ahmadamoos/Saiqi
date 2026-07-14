@@ -40,27 +40,27 @@
     @media(max-width:620px){.container{width:min(100% - 28px,1160px)}.section{padding:78px 0}.header{height:70px}.nav{inset-block-start:70px}.brand-mark{width:36px;height:36px}.brand-name{font-size:17px}.hero{padding-top:105px}.hero-grid{gap:25px}.hero h1{font-size:45px}.hero-copy>p{font-size:15px}.hero-proof{flex-direction:column;gap:10px}.phone-stage{height:510px;transform:scale(.84);margin:-42px 0}.orbit.one{width:430px;height:430px}.float-one{right:-35px}.float-two{left:-35px}.audience-strip>div{flex-wrap:wrap;justify-content:center}.steps{grid-template-columns:1fr}.section-title h2{font-size:34px}.split{gap:38px}.visual{min-height:350px}.driver-visual{padding:19px}.request-card{grid-template-columns:auto 1fr}.request-card>b{grid-column:2}.safety-grid{gap:36px}.download{padding-bottom:70px}.download-card{padding:38px 28px;border-radius:24px}.download-actions{width:100%}.store-badge{width:100%;min-width:0}.footer-grid{grid-template-columns:1fr 1fr;gap:35px}.footer-brand{grid-column:1/-1}.footer-bottom{gap:20px;align-items:flex-start}.nav-cta{display:none}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   </style>
+  <link rel="stylesheet" href="site-header.css">
 </head>
-<body>
-  <header class="header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Saiqi home">
-        <span class="brand-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M50 13C36 9 18 13 14 23c-3 8 8 13 21 14" fill="none" stroke="#fa152b" stroke-width="8" stroke-linecap="round"/><path d="M14 51c14 4 32 0 36-10 3-8-8-13-21-14" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/></svg></span>
-        <span class="brand-name">SAIQI<i>.</i></span>
-      </a>
-      <nav class="nav" id="nav" aria-label="Main navigation">
-        <a href="#how" data-ar="كيف تعمل" data-en="How it works">كيف تعمل</a>
-        <a href="#riders" data-ar="للركاب" data-en="Riders">للركاب</a>
-        <a href="#drivers" data-ar="للسائقين" data-en="Drivers">للسائقين</a>
-        <a href="#companies" data-ar="للشركات" data-en="Companies">للشركات</a>
-        <a href="#faq" data-ar="الأسئلة الشائعة" data-en="FAQ">الأسئلة الشائعة</a>
-      </nav>
-      <div class="nav-actions">
-        <a class="nav-cta" href="#download"><span data-ar="ابدأ مع سائقي" data-en="Get started">ابدأ مع سائقي</span><span>←</span></a>
-        <button class="menu" id="menuButton" type="button" aria-label="Open menu"><svg viewBox="0 0 24 24" width="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-      </div>
+<body data-page="home">
+<header class="saiqi-site-header">
+  <div class="saiqi-header-inner">
+    <a class="saiqi-logo" href="index.html" aria-label="Saiqi home">
+      <span class="saiqi-logo-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M50 13C36 9 18 13 14 23c-3 8 8 13 21 14" fill="none" stroke="#fa152b" stroke-width="8" stroke-linecap="round"/><path d="M14 51c14 4 32 0 36-10 3-8-8-13-21-14" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/></svg></span>
+      <span class="saiqi-logo-copy"><span class="saiqi-logo-name">SAIQI<i>.</i></span><small>Move with confidence</small></span>
+    </a>
+    <nav class="saiqi-nav" id="saiqiNavigation" aria-label="Primary navigation">
+      <a class="saiqi-nav-link" href="index.html" data-nav-page="home">Home</a>
+      <a class="saiqi-nav-link" href="user-agreement.html" data-nav-page="user">User Agreement <span class="saiqi-draft-badge">Draft</span></a>
+      <a class="saiqi-nav-link" href="driver-agreement.html" data-nav-page="driver">Driver Agreement</a>
+      <a class="saiqi-nav-link" href="company-agreement.html" data-nav-page="company">Company Agreement</a>
+    </nav>
+    <div class="saiqi-header-actions">
+      <a class="saiqi-download" href="index.html#download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>Get the app</a>
+      <button class="saiqi-menu-button" type="button" aria-expanded="false" aria-controls="saiqiNavigation" aria-label="Toggle navigation"><svg class="open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
     </div>
-  </header>
+  </div>
+</header>
 
   <main id="top">
     <section class="hero">
@@ -133,10 +133,9 @@
   <footer class="footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 64 64"><path d="M50 13C36 9 18 13 14 23c-3 8 8 13 21 14" fill="none" stroke="#fa152b" stroke-width="8" stroke-linecap="round"/><path d="M14 51c14 4 32 0 36-10 3-8-8-13-21-14" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/></svg></span><span class="brand-name">SAIQI<i>.</i></span></a><p data-ar="منصة تنقّل محلية تربط الناس بالطريق الأقرب." data-en="A local mobility platform connecting people to the road ahead.">منصة تنقّل محلية تربط الناس بالطريق الأقرب.</p><div class="contact-links"><a href="tel:+972598846632" aria-label="Call">☎</a><a href="https://wa.me/972598846632" aria-label="WhatsApp">◉</a></div></div><div class="footer-col"><h3 data-ar="المنصة" data-en="Platform">المنصة</h3><a href="#top" data-ar="الرئيسية" data-en="Home">الرئيسية</a><a href="#riders" data-ar="للركاب" data-en="Riders">للركاب</a><a href="#drivers" data-ar="للسائقين" data-en="Drivers">للسائقين</a><a href="#companies" data-ar="للشركات" data-en="Companies">للشركات</a></div><div class="footer-col"><h3 data-ar="المساعدة" data-en="Help">المساعدة</h3><a href="#faq" data-ar="الأسئلة الشائعة" data-en="FAQ">الأسئلة الشائعة</a><a href="tel:+972598846632" data-ar="اتصل بنا" data-en="Contact us">اتصل بنا</a><a href="https://wa.me/972598846632">WhatsApp</a></div><div class="footer-col"><h3 data-ar="قريباً" data-en="Coming next">قريباً</h3><a href="user-agreement.html">User agreement (draft)</a><a href="driver-agreement.html">Driver agreement</a><a href="company-agreement.html">Company agreement</a><a href="#" data-ar="مركز الدعم" data-en="Support center">مركز الدعم</a><a href="#" data-ar="سياسة الخصوصية" data-en="Privacy policy">سياسة الخصوصية</a><a href="#" data-ar="حذف الحساب" data-en="Delete account">حذف الحساب</a></div></div><div class="container footer-bottom"><span>© 2026 Saiqi. <span data-ar="جميع الحقوق محفوظة." data-en="All rights reserved.">جميع الحقوق محفوظة.</span></span></div></footer>
 
   <script>
-    const nav=document.getElementById('nav');
     document.querySelectorAll('[data-en]').forEach(element=>element.textContent=element.dataset.en);
-    document.getElementById('menuButton').addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>nav.classList.remove('open')));
     document.querySelectorAll('.faq-question').forEach(button=>button.addEventListener('click',()=>{const item=button.closest('.faq-item'),wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));if(!wasOpen)item.classList.add('open')}));
   </script>
+<script src="site-header.js"></script>
 </body>
 </html>
