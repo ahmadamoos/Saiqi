@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071512" />
+    <meta
+      name="description"
+      content="Saiqi Privacy Policy for passengers, drivers, taxi companies, and website visitors. Available in English, Arabic, and Hebrew."
+    />
+    <title>Privacy Policy | Saiqi</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+      :root {
+        --green: #00cc99;
+        --green-dark: #008f6b;
+        --mint: #e8fff8;
+        --ink: #081714;
+        --muted: #60716c;
+        --line: #dce8e4;
+        --soft: #f4f8f6;
+        --paper: #fff;
+        --shadow: 0 24px 70px rgba(2, 44, 33, 0.1);
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+      body {
+        margin: 0;
+        background: var(--soft);
+        color: var(--ink);
+        font-family: "Plus Jakarta Sans", "Noto Kufi Arabic", sans-serif;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+      html[dir="rtl"] body { font-family: "Noto Kufi Arabic", "Plus Jakarta Sans", sans-serif; }
+      a { color: inherit; text-decoration: none; }
+      button { font: inherit; }
+      .container { width: min(1160px, calc(100% - 40px)); margin-inline: auto; }
+      .hero {
+        padding: 72px 0 62px;
+        background: radial-gradient(circle at 86% 5%, #c8fff0, transparent 30%), linear-gradient(#f8fbfa, #edf8f4);
+        border-bottom: 1px solid var(--line);
+      }
+      .hero-grid { display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 50px; align-items: end; }
+      .eyebrow { color: var(--green-dark); font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+      h1 { margin: 14px 0 16px; font-size: clamp(42px, 6vw, 70px); line-height: 1.04; letter-spacing: -0.055em; }
+      .subtitle { max-width: 760px; margin: 0; color: #48605a; font-size: 16px; }
+      .meta { background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 8px 22px; box-shadow: var(--shadow); }
+      .meta div { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+      .meta div:last-child { border: 0; }
+      .layout { display: grid; grid-template-columns: 235px 1fr; gap: 38px; padding: 55px 0 90px; }
+      .sidebar { position: sticky; top: 96px; align-self: start; display: grid; gap: 18px; }
+      .languages { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; }
+      .language-button { border: 1px solid var(--line); background: white; color: var(--ink); border-radius: 11px; padding: 9px 5px; cursor: pointer; font-weight: 800; }
+      .language-button.active { background: var(--ink); color: white; border-color: var(--ink); }
+      .toc { max-height: calc(100vh - 180px); overflow: auto; padding-inline-end: 5px; }
+      .toc a { display: block; border-inline-start: 2px solid var(--line); padding: 7px 10px; color: var(--muted); font-size: 11px; }
+      .toc a:hover { color: var(--green-dark); border-color: var(--green); }
+      .policy { background: white; border: 1px solid var(--line); border-radius: 27px; padding: clamp(27px, 5vw, 60px); box-shadow: var(--shadow); }
+      .policy section { padding: 30px 0 25px; border-bottom: 1px solid var(--line); }
+      .policy section:first-child { padding-top: 0; }
+      .policy section:last-child { border-bottom: 0; padding-bottom: 0; }
+      .policy h2 { margin: 0 0 15px; font-size: clamp(21px, 2.5vw, 29px); line-height: 1.35; letter-spacing: -0.025em; }
+      html[dir="rtl"] .policy h2, html[dir="rtl"] h1 { letter-spacing: 0; }
+      .policy p, .policy li { color: #3d514b; font-size: 13px; }
+      .policy p { margin: 11px 0; }
+      .policy ul { padding-inline-start: 22px; display: grid; gap: 7px; }
+      .policy li::marker { color: var(--green-dark); }
+      .contact { margin-top: 28px; padding: 23px; background: var(--mint); border-radius: 18px; display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+      .contact h2, .contact p { margin: 0; }
+      .contact h2 { font-size: 18px; }
+      .contact p { color: var(--muted); font-size: 12px; }
+      .contact-links { display: flex; gap: 8px; flex-wrap: wrap; }
+      .contact-links a { padding: 9px 12px; border-radius: 10px; background: white; border: 1px solid var(--line); font-size: 11px; font-weight: 800; }
+      footer { background: var(--ink); color: white; padding: 30px 0; }
+      .footer-inner { display: flex; justify-content: space-between; gap: 20px; color: #9bb0aa; font-size: 11px; }
+      .footer-links { display: flex; gap: 18px; color: white; font-weight: 700; flex-wrap: wrap; }
+      @media (max-width: 850px) {
+        .hero-grid, .layout { grid-template-columns: 1fr; }
+        .hero-grid { gap: 26px; }
+        .sidebar { position: static; }
+        .toc { display: none; }
+      }
+      @media (max-width: 540px) {
+        .container { width: calc(100% - 24px); }
+        .hero { padding: 46px 0; }
+        h1 { font-size: 40px; }
+        .policy { padding: 25px 19px; }
+        .contact, .footer-inner { align-items: flex-start; flex-direction: column; }
+      }
+      @media print {
+        .saiqi-site-header, .sidebar, .contact, footer { display: none !important; }
+        .hero { padding: 20px 0; background: white; }
+        .layout { display: block; padding: 15px 0; }
+        .policy { padding: 0; border: 0; box-shadow: none; }
+      }
+    </style>
+    <link rel="stylesheet" href="site-header.css" />
+  </head>
+  <body data-page="privacy">
+    <header class="saiqi-site-header">
+      <div class="saiqi-header-inner">
+        <a class="saiqi-logo" href="index.html" aria-label="Saiqi home">
+          <span class="saiqi-logo-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M50 13C36 9 18 13 14 23c-3 8 8 13 21 14" fill="none" stroke="#fa152b" stroke-width="8" stroke-linecap="round"/><path d="M14 51c14 4 32 0 36-10 3-8-8-13-21-14" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/></svg></span>
+          <span class="saiqi-logo-copy"><span class="saiqi-logo-name">SAIQI<i>.</i></span><small>Move with confidence</small></span>
+        </a>
+        <nav class="saiqi-nav" id="saiqiNavigation" aria-label="Primary navigation">
+          <a class="saiqi-nav-link" href="index.html" data-nav-page="home">Home</a>
+          <a class="saiqi-nav-link" href="user-agreement.html" data-nav-page="user">User Agreement</a>
+          <a class="saiqi-nav-link" href="driver-agreement.html" data-nav-page="driver">Driver Agreement</a>
+          <a class="saiqi-nav-link" href="company-agreement.html" data-nav-page="company">Company Agreement</a>
+          <a class="saiqi-nav-link" href="privacy.html" data-nav-page="privacy">Privacy Policy</a>
+        </nav>
+        <div class="saiqi-header-actions">
+          <a class="saiqi-download" href="index.html#download">Get the app</a>
+          <button class="saiqi-menu-button" type="button" aria-expanded="false" aria-controls="saiqiNavigation" aria-label="Toggle navigation"><svg class="open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow" id="policyLabel">Privacy and data protection</span>
+            <h1 id="policyTitle">Saiqi Privacy Policy</h1>
+            <p class="subtitle" id="policySubtitle"></p>
+          </div>
+          <aside class="meta" aria-label="Policy information">
+            <div><span id="versionLabel">Version</span><strong id="policyVersion">1.0</strong></div>
+            <div><span id="effectiveDateLabel">Effective date</span><strong id="effectiveDate">2026-07-22</strong></div>
+            <div><span>Languages</span><strong>EN · AR · HE</strong></div>
+          </aside>
+        </div>
+      </section>
+
+      <div class="container layout">
+        <aside class="sidebar">
+          <div class="languages" role="group" aria-label="Policy language">
+            <button class="language-button active" type="button" data-language="en">EN</button>
+            <button class="language-button" type="button" data-language="ar">العربية</button>
+            <button class="language-button" type="button" data-language="he">עברית</button>
+          </div>
+          <nav class="toc" id="policyToc" aria-label="Privacy Policy contents"></nav>
+        </aside>
+
+        <div>
+          <article class="policy" id="policyContent"></article>
+          <aside class="contact">
+            <div><h2 id="contactTitle">Privacy questions or requests?</h2><p id="contactText">Contact Saiqi using the details stated in this policy.</p></div>
+            <div class="contact-links"><a href="mailto:saiqi-cab@hotmail.com">Email</a><a href="https://wa.me/972598846632">WhatsApp</a></div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>© 2026 Saiqi. All rights reserved.</span>
+        <div class="footer-links"><a href="index.html">Home</a><a href="user-agreement.html">User Agreement</a><a href="driver-agreement.html">Driver Agreement</a><a href="company-agreement.html">Company Agreement</a></div>
+      </div>
+    </footer>
+
+    <script src="privacy-policy-data.js"></script>
+    <script>
+      (() => {
+        const labels = {
+          en: { banner: "Privacy and data protection", languages: "Languages", contactTitle: "Privacy questions or requests?", contactText: "Contact Saiqi using the details stated in this policy." },
+          ar: { banner: "الخصوصية وحماية البيانات", languages: "اللغات", contactTitle: "لديك سؤال أو طلب متعلق بالخصوصية؟", contactText: "تواصل مع سائقي باستخدام بيانات الاتصال الواردة في هذه السياسة." },
+          he: { banner: "פרטיות והגנת מידע", languages: "שפות", contactTitle: "שאלות או בקשות בנושא פרטיות?", contactText: "ניתן ליצור קשר עם Saiqi באמצעות הפרטים המופיעים במדיניות זו." },
+        };
+
+        function render(language) {
+          const source = window.SAIQI_PRIVACY;
+          const policy = source.policies[language] || source.policies.en;
+          const rtl = language === "ar" || language === "he";
+          document.documentElement.lang = language;
+          document.documentElement.dir = rtl ? "rtl" : "ltr";
+          document.title = `${policy.title} | Saiqi`;
+          document.getElementById("policyLabel").textContent = labels[language].banner;
+          document.getElementById("policyTitle").textContent = policy.title;
+          document.getElementById("policySubtitle").textContent = policy.subtitle;
+          document.getElementById("versionLabel").textContent = policy.versionLabel;
+          document.getElementById("effectiveDateLabel").textContent = policy.effectiveDateLabel;
+          document.getElementById("policyVersion").textContent = source.version;
+          document.getElementById("effectiveDate").textContent = source.effectiveDate;
+          document.querySelector(".meta div:last-child span").textContent = labels[language].languages;
+          document.getElementById("contactTitle").textContent = labels[language].contactTitle;
+          document.getElementById("contactText").textContent = labels[language].contactText;
+
+          const content = document.getElementById("policyContent");
+          const toc = document.getElementById("policyToc");
+          content.replaceChildren();
+          toc.replaceChildren();
+
+          policy.sections.forEach((section, index) => {
+            const id = `section-${index + 1}`;
+            const wrapper = document.createElement("section");
+            wrapper.id = id;
+            const heading = document.createElement("h2");
+            heading.textContent = section.title;
+            wrapper.appendChild(heading);
+            section.paragraphs.forEach((text) => {
+              const paragraph = document.createElement("p");
+              paragraph.textContent = text;
+              wrapper.appendChild(paragraph);
+            });
+            if (section.bullets?.length) {
+              const list = document.createElement("ul");
+              section.bullets.forEach((text) => {
+                const item = document.createElement("li");
+                item.textContent = text;
+                list.appendChild(item);
+              });
+              wrapper.appendChild(list);
+            }
+            content.appendChild(wrapper);
+            const link = document.createElement("a");
+            link.href = `#${id}`;
+            link.textContent = section.title;
+            toc.appendChild(link);
+          });
+
+          document.querySelectorAll("[data-language]").forEach((button) => button.classList.toggle("active", button.dataset.language === language));
+          localStorage.setItem("saiqi-policy-language", language);
+        }
+
+        document.querySelectorAll("[data-language]").forEach((button) => button.addEventListener("click", () => render(button.dataset.language)));
+        const requested = new URLSearchParams(location.search).get("lang");
+        const saved = localStorage.getItem("saiqi-policy-language");
+        render(["en", "ar", "he"].includes(requested) ? requested : (["en", "ar", "he"].includes(saved) ? saved : "en"));
+      })();
+    </script>
+    <script src="site-header.js"></script>
+  </body>
+</html>
