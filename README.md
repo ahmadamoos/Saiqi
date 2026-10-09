@@ -12,7 +12,7 @@ The public page is "delete-account.html", linked from the homepage footer and Pr
 3. Open the FormSubmit activation email in saiqi-cab@hotmail.com (check spam) and confirm the form.
 4. Submit another test request and verify the email arrives, including the account identifier and preferred contact method. Do not assume pre-activation requests have been delivered.
 
-Visitors do not need an email login. They enter a contact email, submit the form, complete FormSubmit's security check, and see its confirmation page. If delivery fails, the page also offers the existing Saiqi WhatsApp support link.
+Visitors do not need an email login. They enter a contact email, submit the form, complete FormSubmit's security check, and return to https://ahmadamoos.github.io/Saiqi/ after a successful submission. If delivery fails, the page also offers the existing Saiqi WhatsApp support link.
 
 FormSubmit processes the submitted contact details; its documentation states submissions are retained in its archive for 30 days. Review this provider's privacy terms for your deployment. No secret is stored in the website. The form action uses the opaque FormSubmit identifier supplied in the activation email for the recipient, rather than exposing the recipient address in the form endpoint. Confirm the activation email and verify delivery to saiqi-cab@hotmail.com after deployment.
 
