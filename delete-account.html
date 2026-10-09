@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071512">
+  <meta name="description" content="Request deletion of your Saiqi account and associated personal data. Saiqi support will verify account ownership before proceeding.">
+  <title>Request Account Deletion | Saiqi</title>
+  <link rel="icon" type="image/png" href="icon/Sicon.png">
+  <link rel="stylesheet" href="site-header.css">
+  <link rel="stylesheet" href="delete-account.css">
+</head>
+<body data-page="delete-account">
+    <header class="saiqi-site-header">
+      <div class="saiqi-header-inner">
+        <a class="saiqi-logo" href="index.html" aria-label="Saiqi home">
+          <span class="saiqi-logo-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M50 13C36 9 18 13 14 23c-3 8 8 13 21 14" fill="none" stroke="#fa152b" stroke-width="8" stroke-linecap="round"/><path d="M14 51c14 4 32 0 36-10 3-8-8-13-21-14" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/></svg></span>
+          <span class="saiqi-logo-copy"><span class="saiqi-logo-name">SAIQI<i>.</i></span><small>Move with confidence</small></span>
+        </a>
+        <nav class="saiqi-nav" id="saiqiNavigation" aria-label="Primary navigation">
+          <a class="saiqi-nav-link" href="index.html" data-nav-page="home">Home</a>
+          <a class="saiqi-nav-link" href="user-agreement.html" data-nav-page="user">User Agreement</a>
+          <a class="saiqi-nav-link" href="driver-agreement.html" data-nav-page="driver">Driver Agreement</a>
+          <a class="saiqi-nav-link" href="company-agreement.html" data-nav-page="company">Company Agreement</a>
+          <a class="saiqi-nav-link" href="privacy.html" data-nav-page="privacy">Privacy Policy</a>
+        </nav>
+        <div class="saiqi-header-actions">
+          <a class="saiqi-download" href="index.html#download">Get the app</a>
+          <button class="saiqi-menu-button" type="button" aria-expanded="false" aria-controls="saiqiNavigation" aria-label="Toggle navigation"><svg class="open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+        </div>
+      </div>
+    </header>
+  <main class="deletion-main">
+    <a class="back-link" href="index.html">← Back to Saiqi</a>
+    <section class="deletion-card" aria-labelledby="deletion-title">
+      <div class="card-heading">
+        <p class="brand-label">Saiqi | <span lang="ar" dir="rtl">سائقي</span></p>
+        <h1 id="deletion-title">Request Account Deletion</h1>
+        <p>Submit a request to delete your Saiqi account and associated personal data.</p>
+      </div>
+      <form action="https://formsubmit.co/saiqi-cab@hotmail.com" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="_subject" value="Saiqi — Account deletion request">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="Request type" value="Account and associated personal data deletion; ownership verification required">
+        <div class="honeypot" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+        <div class="field">
+          <label for="contact-email">Contact email address</label>
+          <input id="contact-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" maxlength="254" required>
+        </div>
+        <div class="field">
+          <label for="account">Registered phone number or company email</label>
+          <input id="account" name="Registered phone number or company email" type="text" placeholder="+970… or company@example.com" maxlength="254" required aria-describedby="account-hint">
+          <p class="hint" id="account-hint">Use the phone number or company email linked to your Saiqi account.</p>
+        </div>
+        <fieldset>
+          <legend>Preferred contact method</legend>
+          <label class="radio"><input type="radio" name="Preferred contact method" value="WhatsApp" checked> WhatsApp</label>
+          <label class="radio"><input type="radio" name="Preferred contact method" value="Phone call"> Phone call</label>
+          <label class="radio"><input type="radio" name="Preferred contact method" value="Email"> Email</label>
+        </fieldset>
+        <div class="field" id="phone-field">
+          <label for="contact-phone">Contact phone number <span class="optional">(if different or registered with email)</span></label>
+          <input id="contact-phone" name="Contact phone number" type="tel" placeholder="Include country code, e.g. +970…" autocomplete="tel" maxlength="30" aria-describedby="phone-hint">
+          <p class="hint" id="phone-hint">For WhatsApp or a phone call, provide a number here if you registered with a company email.</p>
+        </div>
+        <aside class="verification-note">
+          <strong>What happens next?</strong>
+          <p>After submitting your request, Saiqi support will contact you to verify account ownership before proceeding with deletion. You do not need to reinstall the app.</p>
+          <p>Submitting this form does not immediately delete your account. See our <a href="privacy.html">Privacy Policy</a> for details about data deletion and retention.</p>
+        </aside>
+        <p class="privacy-note">Your details are sent to Saiqi support through <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener noreferrer">FormSubmit</a> to process this request. Do not include passwords or verification codes.</p>
+        <button class="submit-button" type="submit">Submit deletion request <span aria-hidden="true">→</span></button>
+        <p class="hint submit-hint">No email sign-in required. You will continue to a security check and confirmation page.</p>
+      </form>
+    </section>
+    <p class="support-note">Need help? <a href="https://wa.me/972598846632">Contact Saiqi on WhatsApp</a></p>
+  </main>
+  <footer class="deletion-footer"><span>© 2026 Saiqi. All rights reserved.</span><a href="privacy.html">Privacy Policy</a><a href="index.html">Home</a></footer>
+  <script src="site-header.js"></script>
+  <script src="delete-account.js"></script>
+</body>
+</html>
