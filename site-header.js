@@ -28,7 +28,7 @@
     if (event.key === 'Escape') closeMenu();
   });
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 980) closeMenu();
+    if (window.innerWidth > 1120) closeMenu();
   });
   const updateHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 12);
   updateHeader();
