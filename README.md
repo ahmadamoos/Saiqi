@@ -14,7 +14,7 @@ The public page is "delete-account.html", linked from the homepage footer and Pr
 
 Visitors do not need an email login. They enter a contact email, submit the form, complete FormSubmit's security check, and see its confirmation page. If delivery fails, the page also offers the existing Saiqi WhatsApp support link.
 
-FormSubmit processes the submitted contact details; its documentation states submissions are retained in its archive for 30 days. Review this provider's privacy terms for your deployment. No secret is stored in the website. FormSubmit supplies an optional opaque form identifier in the activation email; it can replace the recipient email in the form action to reduce public email exposure.
+FormSubmit processes the submitted contact details; its documentation states submissions are retained in its archive for 30 days. Review this provider's privacy terms for your deployment. No secret is stored in the website. The form action uses the opaque FormSubmit identifier supplied in the activation email for the recipient, rather than exposing the recipient address in the form endpoint. Confirm the activation email and verify delivery to saiqi-cab@hotmail.com after deployment.
 
 Documentation: https://formsubmit.co/documentation
 
